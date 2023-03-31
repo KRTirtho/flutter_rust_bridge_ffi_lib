@@ -27,6 +27,17 @@ environment:
 vars:
   name:
     type: string
-    description: Your name
-    default: Dash
-    prompt: What is your name?
+    description: The name of the brick.
+    prompt: What is the name of the brick? (snake_case)
+  github_user:
+    type: string
+    description: The user name of the author.
+    prompt: What is the your github user name?
+  repo_name:
+    type: string
+    description: The name of the repository.
+    prompt: What is the name of the repository?
+  email:
+    type: string
+    description: The email of the author.
+    prompt: What is your email associated with github?
