@@ -1,0 +1,15 @@
+version: 2
+enable-beta-ecosystems: true
+updates:
+  - package-ecosystem: pub
+    directory: "/packages/{{name.snakeCase()}}"
+    schedule:
+      interval: weekly
+  - package-ecosystem: pub
+    directory: "/packages/{{name.snakeCase()}}/example"
+    schedule:
+      interval: weekly
+  - package-ecosystem: cargo
+    directory: "/packages/{{name.snakeCase()}}/native"
+    schedule:
+      interval: weekly
